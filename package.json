@@ -26,10 +26,6 @@
         "title": "Open QuickPick"
       },
       {
-        "command": "browseclipboard.quickpick.pastemove",
-        "title": "Paste from QuickPick and move to front"
-      },
-      {
         "command": "browseclipboard.quickpick.pasteonly",
         "title": "Paste from QuickPick"
       },
