@@ -22,28 +22,84 @@
         "title": "Cut"
       },
       {
-        "command": "browseclipboard.pasteFromQuickPick",
+        "command": "browseclipboard.quickpick.open",
+        "title": "Open QuickPick"
+      },
+      {
+        "command": "browseclipboard.quickpick.pastemove",
+        "title": "Paste from QuickPick and move to front"
+      },
+      {
+        "command": "browseclipboard.quickpick.pasteonly",
         "title": "Paste from QuickPick"
+      },
+      {
+        "command": "browseclipboard.quickpick.copy",
+        "title": "Copy from QuickPick"
+      },
+      {
+        "command": "browseclipboard.quickpick.cut",
+        "title": "Cut from QuickPick"
+      },
+      {
+        "command": "browseclipboard.quickpick.delete",
+        "title": "Delete from QuickPick"
       }
     ],
     "keybindings": [
 			{
 				"command": "browseclipboard.copy",
-				"key": "ctrl+alt+c",
-				"mac": "cmd+alt+c",
+				"key": "ctrl+c",
+				"mac": "cmd+c",
 				"when": "editorTextFocus"
 			},
       {
 				"command": "browseclipboard.cut",
-				"key": "ctrl+alt+x",
-				"mac": "cmd+alt+x",
+				"key": "ctrl+x",
+				"mac": "cmd+x",
 				"when": "editorTextFocus"
 			},
       {
-				"command": "browseclipboard.pasteFromQuickPick",
-				"key": "ctrl+alt+v",
-				"mac": "cmd+alt+v",
+				"command": "browseclipboard.openQuickPick",
+				"key": "ctrl+y",
+				"mac": "ctrl+y",
 				"when": "editorTextFocus"
+			},
+      {
+				"command": "browseclipboard.quickpick.pasteonly",
+				"key": "shift+insert",
+				"mac": "shift+insert",
+				"when": "inQuickOpen"
+			},
+      {
+				"command": "browseclipboard.quickpick.copy",
+				"key": "ctrl+insert",
+				"mac": "ctrl+insert",
+				"when": "inQuickOpen"
+			},
+      {
+				"command": "browseclipboard.quickpick.copy",
+				"key": "ctrl+c",
+				"mac": "ctrl+c",
+				"when": "inQuickOpen"
+			},
+      {
+				"command": "browseclipboard.quickpick.cut",
+				"key": "ctrl+x",
+				"mac": "ctrl+x",
+				"when": "inQuickOpen"
+			},
+      {
+				"command": "browseclipboard.quickpick.delete",
+				"key": "ctrl+delete",
+				"mac": "ctrl+delete",
+				"when": "inQuickOpen"
+			},
+      {
+				"command": "browseclipboard.quickpick.delete",
+				"key": "ctrl+d",
+				"mac": "ctrl+d",
+				"when": "inQuickOpen"
 			}
 		]
   },
