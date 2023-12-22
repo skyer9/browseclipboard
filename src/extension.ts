@@ -3,6 +3,7 @@ import { commands, ExtensionContext, TreeItem, TreeItemCollapsibleState, window 
 
 var clipboardList: Clipboard[] = [];
 var command: string;
+var isInBrowseClipboardPasteMode: boolean;
 
 export function activate(context: vscode.ExtensionContext) {
 	const config = vscode.workspace.getConfiguration("browseclipboard");
@@ -77,8 +78,10 @@ export function activate(context: vscode.ExtensionContext) {
 			};
 		}).reverse();
 
+		isInBrowseClipboardPasteMode = true;
 		command = "pastemove";
 		window.showQuickPick(items).then(item => {
+			isInBrowseClipboardPasteMode = false;
 			if (item === undefined) { return; }
 			let str = ((item as vscode.QuickPickItem).label as string);
 			const label = str.replace(/↵/gi, "\n");
@@ -107,21 +110,25 @@ export function activate(context: vscode.ExtensionContext) {
 	});
 
 	commands.registerCommand('browseclipboard.quickpick.pasteonly', () => {
+		if (!isInBrowseClipboardPasteMode) { return; }
 		command = "pasteonly";
 		vscode.commands.executeCommand('workbench.action.acceptSelectedQuickOpenItem');
 	});
 
 	commands.registerCommand('browseclipboard.quickpick.copy', () => {
+		if (!isInBrowseClipboardPasteMode) { return; }
 		command = "copy";
 		vscode.commands.executeCommand('workbench.action.acceptSelectedQuickOpenItem');
 	});
 
 	commands.registerCommand('browseclipboard.quickpick.cut', () => {
+		if (!isInBrowseClipboardPasteMode) { return; }
 		command = "cut";
 		vscode.commands.executeCommand('workbench.action.acceptSelectedQuickOpenItem');
 	});
 
 	commands.registerCommand('browseclipboard.quickpick.delete', () => {
+		if (!isInBrowseClipboardPasteMode) { return; }
 		command = "delete";
 		vscode.commands.executeCommand('workbench.action.acceptSelectedQuickOpenItem');
 	});
