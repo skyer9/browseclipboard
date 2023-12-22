@@ -1,6 +1,6 @@
 # browseclipboard README
 
-Simple Clibboard Browser.
+Simple Clipboard Browser.
 
 ## Features
 
