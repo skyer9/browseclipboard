@@ -1,8 +1,9 @@
 {
   "name": "browseclipboard",
   "displayName": "BrowseClipboard",
-  "description": "",
-  "version": "0.0.1",
+  "description": "Simple Clipboard Browser",
+  "version": "0.1.0",
+  "icon": "resources/browseclipboard-icon.png",
   "engines": {
     "vscode": "^1.85.0"
   },
