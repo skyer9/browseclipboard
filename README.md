@@ -7,15 +7,15 @@ Simple Clipboard Browser.
 ### Copy
 It's like a normal copy and cut.
 * **window, linux:** `ctrl + c`
-* **mac:** `command + c`
+* **mac:** `cmd + c`
 
 ### Cut
 * **window, linux:** `ctrl + x`
-* **mac:** `command + x`
+* **mac:** `cmd + x`
 
 ### Paste mode
 * **window, linux:** `ctrl + shift + v`
-* **mac:** `command + shift + v`
+* **mac:** `cmd + shift + v`
 
 #### Paste and move to first
 * **window, linux:** `enter`
@@ -27,7 +27,7 @@ It's like a normal copy and cut.
 
 #### Copy
 * **window, linux:** `ctrl + insert` or `ctrl + c`
-* **mac:** `cmd + insert` or `command + c`
+* **mac:** `cmd + insert` or `cmd + c`
 
 #### Cut
 * **window, linux:** `ctrl + x`
@@ -35,7 +35,7 @@ It's like a normal copy and cut.
 
 #### Delete
 * **window, linux:** `ctrl + delete` or `ctrl + d`
-* **mac:** `cmd + delete` or `command + d`
+* **mac:** `cmd + delete` or `cmd + d`
 
 ## Extension Setting
 
