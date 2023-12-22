@@ -22,7 +22,7 @@
         "title": "Cut"
       },
       {
-        "command": "browseclipboard.quickpick.open",
+        "command": "browseclipboard.openQuickPick",
         "title": "Open QuickPick"
       },
       {
@@ -57,8 +57,8 @@
 			},
       {
 				"command": "browseclipboard.openQuickPick",
-				"key": "ctrl+y",
-				"mac": "ctrl+y",
+				"key": "ctrl+shift+v",
+				"mac": "ctrl+shift+v",
 				"when": "editorTextFocus"
 			},
       {
