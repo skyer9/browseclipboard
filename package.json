@@ -3,13 +3,29 @@
   "displayName": "BrowseClipboard",
   "description": "Simple Clipboard Browser",
   "version": "0.1.0",
-  "icon": "resources/browseclipboard-icon.png",
+  "icon": "resources/browseclipboard.png",
   "engines": {
     "vscode": "^1.85.0"
   },
-  "categories": [
-    "Other"
-  ],
+	"extensionKind": [
+		"ui"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/skyer9/browseclipboard.git"
+	},
+	"homepage": "https://github.com/skyer9/browseclipboard",
+	"categories": [
+		"Other"
+	],
+	"keywords": [
+		"clipboard",
+		"copy",
+		"cut",
+		"paste",
+		"history",
+    "browse-kill-ring"
+	],
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
