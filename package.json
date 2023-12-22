@@ -58,7 +58,7 @@
       {
 				"command": "browseclipboard.openQuickPick",
 				"key": "ctrl+shift+v",
-				"mac": "ctrl+shift+v",
+				"mac": "cmd+shift+v",
 				"when": "editorTextFocus"
 			},
       {
@@ -70,31 +70,31 @@
       {
 				"command": "browseclipboard.quickpick.copy",
 				"key": "ctrl+insert",
-				"mac": "ctrl+insert",
+				"mac": "cmd+insert",
 				"when": "inQuickOpen"
 			},
       {
 				"command": "browseclipboard.quickpick.copy",
 				"key": "ctrl+c",
-				"mac": "ctrl+c",
+				"mac": "cmd+c",
 				"when": "inQuickOpen"
 			},
       {
 				"command": "browseclipboard.quickpick.cut",
 				"key": "ctrl+x",
-				"mac": "ctrl+x",
+				"mac": "cmd+x",
 				"when": "inQuickOpen"
 			},
       {
 				"command": "browseclipboard.quickpick.delete",
 				"key": "ctrl+delete",
-				"mac": "ctrl+delete",
+				"mac": "cmd+delete",
 				"when": "inQuickOpen"
 			},
       {
 				"command": "browseclipboard.quickpick.delete",
 				"key": "ctrl+d",
-				"mac": "ctrl+d",
+				"mac": "cmd+d",
 				"when": "inQuickOpen"
 			}
 		]
